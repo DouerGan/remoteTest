@@ -1,0 +1,21 @@
+SHA:
+blob = struct{
+	SHA-1:array<byte>,
+	content:array<byte>,
+	size:int,
+	};
+tree = struct{
+	SHA-1:array<byte>,
+	entires:array<tree|blob>
+	};
+commit=struct{
+	SHA-1:array<byte>,
+	parent:array<commit>,
+	author:string,
+	committer:string,
+	commit_timestamp:int,
+	message:string,
+	snapshot:tree
+	};
+hello,this is a addition
+this sentence is added by DouerGan in master.
