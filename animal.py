@@ -3,8 +3,12 @@ def default():
     print("hello")
 def dog():
     print("wolf")
+def cat():
+    print("meow")
 def main():
-    if(sys.argv[1]=='dog'):
+    if(sys.argv[1]=='cat'):
+        cat()
+    elif(sys.argv[1]=='dog'):
         dog()
     else:
         default()
