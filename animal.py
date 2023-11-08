@@ -1,9 +1,11 @@
 import sys
 def default():
     print("hello")
+def cat():
+    print("meow")
 def main():
-    if(sys.argv[1]=='hello'):
-        pass
+    if(sys.argv[1]=='cat'):
+        cat()
     else:
         default()
 if __name__ == "__main__":
